@@ -23,32 +23,48 @@ Web Application:
 A Flask web application is set up with routes for the homepage and for handling recommendations.
 The homepage allows users to input their user ID and the number of recommendations they want.
 The recommendations are then displayed to the user.
+1. Set Up Your Environment
+Install Python: Make sure you have Python installed on your machine. You can check this by running python --version in your terminal. If Python is not installed, download and install it from the official Python website.
 
-Hosting the Application
-1.Install Required Libraries:
-Ensure you have Python and pip installed. You will also need to install the required libraries.
+Install Necessary Packages: You’ll need to install Streamlit and any other dependencies your application requires, such as TensorFlow (for Keras) and PyMongo. You can do this using pip:
 
 bash
-pip install pandas numpy tensorflow flask scikit-learn
-2.Prepare Your Script:
-Make sure your script is in the proper directory. The script should look like the one you've provided, with your dataset path correctly specified.
+Copy code
+pip install streamlit keras pymongo numpy
+2. Prepare Your Application Code
+Create a new Python file (e.g., app.py) and paste the converted Streamlit code into it.
 
-3.Set Up the Directory Structure:
-Organize your project directory. It should include:
+Make sure the trained model file (movie_recommender_model.keras) is in the same directory as your Python script or adjust the path in the code accordingly.
 
-app.py: Your main Flask application script.
-templates/: A folder containing your HTML templates (index.html and recommendations.html).
-static/: A folder containing any static files like CSS or JavaScript files, if needed.
-ratings.csv: Your dataset file.
-4.Create HTML Templates:
-Create the index.html and recommendations.html files inside the templates/ folder. 
+3. Run the Streamlit Application Locally
+Open your terminal or command prompt and navigate to the directory where your app.py file is located.
 
-5. Run the application
+Run the Streamlit application with the following command:
 
-6.Open Browser:
-After running python app.py, open your browser and go to  http://127.0.0.1:5000.
+bash
+Copy code
+streamlit run app.py
+Streamlit will start a local server and open a new tab in your default web browser, displaying your application.
 
-Use the Application:
-Enter a user ID and the number of recommendations you want, then submit the form to see the recommendations.
+4. Interacting with the Application
+User ID: Enter the user ID in the provided input box.
+
+Movie Name: Enter the name of the movie you want to predict the rating for.
+
+Predict: Click the "Predict Rating" button to see the predicted rating based on your model.
+
+The predicted rating will be displayed on the page. If the movie name is not found in your MongoDB database, an error message will be shown.
+
+5. Deploying the Application Online
+If you want to acce Streamlit application  over the internet, you can do so by doing the following:
+
+ Streamlit Community Cloud
+Sign Up/Sign In: Go to Streamlit Community Cloud and sign in with your GitHub account.
+Create a New App:
+Create a new repository on GitHub for your Streamlit application, and push your code (app.py and model file) to this repository.
+In Streamlit Cloud, link your GitHub repository, select the branch, and specify app.py as the entry point.
+Deploy: Streamlit will automatically build and deploy your app. Once deployed, you’ll receive a URL that you can share with others.
+
+
 
 Youtube link: 
