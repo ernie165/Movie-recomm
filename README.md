@@ -46,7 +46,7 @@ Create the index.html and recommendations.html files inside the templates/ folde
 5. Run the application
 
 6.Open Browser:
-After running python app.py, open your browser and go to http://127.0.0.1:5000/.
+After running python app.py, open your browser and go to  http://127.0.0.1:5000.
 
 Use the Application:
 Enter a user ID and the number of recommendations you want, then submit the form to see the recommendations.
