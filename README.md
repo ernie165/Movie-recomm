@@ -1,6 +1,6 @@
 # Movie-recomm
 Project Description
-This project involves developing a movie recommendation system using collaborative filtering and deep learning. The system utilizes user ratings of movies to predict which movies a user is likely to enjoy. The recommendation model is implemented using TensorFlow and Keras and is wrapped in a web application using Flask for user interaction. The main components of the project include:
+This project involves developing a movie recommendation system using collaborative filtering and deep learning. The system utilizes user ratings of movies to predict which movies a user is likely to enjoy. The recommendation model is implemented using TensorFlow and Keras and is wrapped in a web application using streamlit for user interaction. The main components of the project include:
 
 Data Preparation:
 
